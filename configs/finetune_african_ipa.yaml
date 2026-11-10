@@ -1,0 +1,22 @@
+pretrained_path: /mnt/volume_d2wey28/models/VoxCPM-0.5B
+train_manifest: /mnt/volume_d2wey28/data/vox-cpm-africa/train_manifest.jsonl
+val_manifest: /mnt/volume_d2wey28/data/vox-cpm-africa/val_manifest.jsonl
+sample_rate: 16000
+batch_size: 16
+grad_accum_steps: 1
+num_workers: 4
+preprocessing_num_workers: 8
+num_iters: 10000
+log_interval: 20
+valid_interval: 250
+save_interval: 1000
+learning_rate: 0.00002
+weight_decay: 0.01
+warmup_steps: 200
+max_steps: 10000
+max_batch_tokens: 8192
+save_path: /mnt/volume_d2wey28/checkpoints/voxcpm_africa
+tensorboard: /mnt/volume_d2wey28/checkpoints/voxcpm_africa/logs
+lambdas:
+  loss/diff: 1.0
+  loss/stop: 1.0
