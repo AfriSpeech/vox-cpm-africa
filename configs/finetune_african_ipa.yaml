@@ -1,6 +1,8 @@
 pretrained_path: /mnt/volume_d2wey28/models/VoxCPM-0.5B
 train_manifest: /mnt/volume_d2wey28/data/vox-cpm-africa/train_manifest.jsonl
 val_manifest: /mnt/volume_d2wey28/data/vox-cpm-africa/val_manifest.jsonl
+custom_tokenizer_path: /mnt/volume_d2wey28/data/africa-tts/tok/ipa_sp4000.json
+tokenizer_offset: 128
 sample_rate: 16000
 batch_size: 16
 grad_accum_steps: 1
